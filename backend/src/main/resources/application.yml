@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/logistics_db?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: "123456"   # TODO: 修改为本地 MySQL 密码
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+mybatis:
+  map-underscore-to-camel-case: true
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl   # 控制台打印 SQL，调试用
+
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true

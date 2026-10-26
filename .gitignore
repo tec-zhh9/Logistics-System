@@ -1,0 +1,31 @@
+# ---------- 依赖与构建产物 ----------
+node_modules/
+dist/
+target/
+*.jar
+*.war
+
+# ---------- IDE ----------
+.idea/
+*.iml
+.vscode/*
+!.vscode/tasks.json
+
+# ---------- 日志与临时文件 ----------
+*.log
+logs/
+npm-debug.log*
+yarn-error.log*
+*.tmp
+*.bak
+
+# ---------- 系统文件 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- 环境与密钥 ----------
+.env
+.env.local
+*.pem
+*.key

@@ -1,0 +1,82 @@
+/* ========== 物流行业主题色：活力橙 + 沉稳绿 ========== */
+:root {
+  /* 主色调：物流橙 */
+  --el-color-primary: #e67e22;
+  --el-color-primary-light-3: #f0a35e;
+  --el-color-primary-light-5: #f5b97f;
+  --el-color-primary-light-7: #f9d2a7;
+  --el-color-primary-light-8: #fbdfc2;
+  --el-color-primary-light-9: #fdecd8;
+  --el-color-primary-dark-2: #b8651b;
+
+  /* 成功色：物流绿 */
+  --el-color-success: #27ae60;
+  --el-color-success-light-3: #52be80;
+  --el-color-success-light-5: #7dcea0;
+  --el-color-success-light-7: #a9dfbf;
+  --el-color-success-light-8: #bfe6cf;
+  --el-color-success-light-9: #d5eede;
+  --el-color-success-dark-2: #1e8449;
+
+  /* 警告色 */
+  --el-color-warning: #f39c12;
+  /* 危险色 */
+  --el-color-danger: #e74c3c;
+  /* 信息色 */
+  --el-color-info: #3498db;
+
+  /* 侧边栏深色背景 */
+  --sidebar-bg: #1a1a2e;
+  --sidebar-active: #e67e22;
+
+  /* 全局背景 */
+  --page-bg: #f5f7fa;
+}
+
+/* Element Plus 按钮 hover 优化 */
+.el-button--primary {
+  --el-button-hover-bg-color: var(--el-color-primary-light-3);
+  --el-button-active-bg-color: var(--el-color-primary-dark-2);
+}
+
+.el-button--success {
+  --el-button-hover-bg-color: var(--el-color-success-light-3);
+  --el-button-active-bg-color: var(--el-color-success-dark-2);
+}
+
+/* 侧边栏样式覆盖 */
+.el-menu--vertical .el-menu-item.is-active {
+  background-color: var(--sidebar-active) !important;
+}
+
+/* 卡片圆角 */
+.el-card {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* 表格头部样式 */
+.el-table th.el-table__cell {
+  background-color: #f8f9fa !important;
+  color: #303133;
+  font-weight: 600;
+}
+
+/* 页面背景 */
+.el-main {
+  background-color: var(--page-bg);
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c0c4cc;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}

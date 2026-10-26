@@ -1,0 +1,40 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "java (build)",
+			"paths": [
+				"${workspace}"
+			],
+			"isFullBuild": false,
+			"group": "build",
+			"problemMatcher": [],
+			"label": "java (build): Build Workspace",
+			"detail": "$(tools) Build all the Java projects in workspace."
+		},
+		{
+			"type": "java (buildArtifact)",
+			"targetPath": "${workspaceFolder}/${workspaceFolderBasename}.jar",
+			"elements": [
+				"${compileOutput:JAVA-Ai_d4a6011d}",
+				"${dependencies:JAVA-Ai_d4a6011d}",
+				"${compileOutput:logistics-backend}",
+				"${dependencies:logistics-backend}"
+			],
+			"problemMatcher": [],
+			"label": "java (buildArtifact): JAVA-Ai"
+		},
+		{
+			"type": "java (buildArtifact)",
+			"targetPath": "${workspaceFolder}/${workspaceFolderBasename}.jar",
+			"elements": [
+				"${compileOutput:JAVA-Ai_d4a6011d}",
+				"${dependencies:JAVA-Ai_d4a6011d}",
+				"${compileOutput:logistics-backend}",
+				"${dependencies:logistics-backend}"
+			],
+			"problemMatcher": [],
+			"label": "java (buildArtifact): JAVA-Ai"
+		}
+	]
+}
